@@ -1,0 +1,74 @@
+[
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/1.webp",
+    "titulo": "Muñeca Bauhaus",
+    "categoria": "Conceptualización",
+    "descripcion": "Muñeca de Historia para el diseño, basada en el ballet del Bauhaus"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/2.webp",
+    "titulo": "Cuchillos idénticos",
+    "categoria": "Laboratorio de prototipado",
+    "descripcion": "Cuchillos basados en una kunai japonesa, hecha de acrílico verde y madera de alerce"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/3.webp",
+    "titulo": "Boomerang impresión 3D",
+    "categoria": "Elaboración digital",
+    "descripcion": "Boomerang molde a escala de PLA café"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/4.webp",
+    "titulo": "Taller 4: De vuelta a Casa",
+    "categoria": "Proyecto Examen",
+    "descripcion": "Juego de mesa para adultos mayores que se estan adaptando nuevamente a la comunidad luego de vivir en la calle"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/5.webp",
+    "titulo": "Taller 4: ClickNotes",
+    "categoria": "Proyecto Examen",
+    "descripcion": "Trabajo de taco de notas, un diseño para hombre referenciado de cubos rubik, magnético, hecho a mano"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/6.webp",
+    "titulo": "Llaveros personalizados",
+    "categoria": "Elaboración digital",
+    "descripcion": "Elaboración e impresión de llaveros para pyme de ilustración"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/7.webp",
+    "titulo": "Bolso con serigrafía",
+    "categoria": "Laboratorio de prototipado",
+    "descripcion": "Bolso hecho a mano con serigrafía geométrica"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/8.webp",
+    "titulo": "Katana",
+    "categoria": "Elaboración digital",
+    "descripcion": "Katana del anime Demon Slayer del personaje Tomioka Giyuu pintada a mano"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/9.webp",
+    "titulo": "Taller 4: Book",
+    "categoria": "Proyecto Examen",
+    "descripcion": "Libro que detalla el proceso del estudiante a través de las etapas"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/10.webp",
+    "titulo": "Contramoldes y moldes de pellet biosustentables",
+    "categoria": "Elaboración digital",
+    "descripcion": "Elaboración de Pellets para viñedos de Cabernet Sauvignon"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/11.webp",
+    "titulo": "VitaCepas",
+    "categoria": "Proyecto Examen",
+    "descripcion": "Elaboración de Pellets para viñedos de Cabernet Sauvignon (final)"
+  },
+  {
+    "imagen": "https://mikuby11.github.io/Clase_10/img/12.png",
+    "titulo": "Mochiko",
+    "categoria": "Proyecto Examen",
+    "descripcion": "Elaboración de packaging y marca de dulces japoneses: Mochis"
+  }
+]
