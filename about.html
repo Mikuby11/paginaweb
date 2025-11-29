@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Mikuby - Sitio en construcción" />
-    <title>Mikuby - En construcción</title>
+    <meta name="description" content="Mikuby - Sobre mí" />
+    <title>Mikuby - Sobre mí</title>
     
     <!-- Bootstrap CSS desde CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
 </head>
 <body>
     <!-- Iconos SVG -->
@@ -17,12 +16,6 @@
         <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"></circle>
             <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
-        </symbol>
-        <symbol id="cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-        </symbol>
-        <symbol id="chevron-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
         </symbol>
     </svg>
 
@@ -51,7 +44,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="laboratorio.html">Laboratorio 3D</a></li>
                         <li class="nav-item"><a class="nav-link" href="imprenta.html">Imprenta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="portafolio">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="cotizacion.html">Cotizaciones</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
                     </ul>
@@ -60,66 +53,314 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Main Content -->
     <main>
-        <div class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-            <div class="col-md-6 p-lg-5 mx-auto my-5">
-                <h1 class="display-3 fw-bold">Diseñado para ti y tus proyectos</h1>
-                <h3 class="fw-normal text-muted mb-3">Construye lo que quieras con Mikuby</h3>
-                <div class="d-flex gap-3 justify-content-center lead fw-normal"></div>
+        <!-- Hero simplificado -->
+        <div class="hero-section position-relative overflow-hidden p-3 p-md-4 text-center">
+            <div class="col-md-8 mx-auto my-4">
+                <h1 class="display-4 fw-bold">FICHA DE PERSONAJE</h1>
+                <p class="lead text-muted">Nivel 5 • Diseñadora en Formación</p>
             </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
-<!-- Features Grid -->
-<div class="container my-5">
-    <div class="row g-4">
-        <!-- Laboratorio 3D -->
-        <div class="col-md-6">
-            <div class="text-bg-dark pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden h-100 d-flex flex-column">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Laboratorio 3D</h2>
-                    <p class="lead">Modelado 3D e impresion 3D de calidad y corto tiempo de espera</p>
+        <!-- Ficha Principal -->
+        <div class="container my-5">
+            <div class="row g-4">
+                
+                <!-- Card Principal - Info Básica -->
+                <div class="col-lg-4">
+                    <div class="card ficha-card h-100">
+                        <div class="card-header ficha-header">
+                            <h4 class="mb-0">INFO BÁSICA</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="fefy-img mx-auto mb-3"></div>
+                            
+                            <div class="info-item">
+                                <span class="info-label">NOMBRE:</span>
+                                <span class="info-value">Fernanda Humeres</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label">ALIAS:</span>
+                                <span class="info-value">Mikuby</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label">CLASE:</span>
+                                <span class="info-value">Diseñadora Integral</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label">NIVEL:</span>
+                                <span class="info-value">5to Semestre</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label">FACCIÓN:</span>
+                                <span class="info-value">PUC - Diseño</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label">ESTADO:</span>
+                                <span class="info-value text-success fw-bold">Disponible</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-body-tertiary shadow-sm mx-auto mt-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0"></div>
+
+                <!-- Stats y Habilidades -->
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        
+                        <!-- Stats Principales -->
+                        <div class="col-12">
+                            <div class="card ficha-card">
+                                <div class="card-header ficha-header">
+                                    <h4 class="mb-0">ESTADÍSTICAS</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-box">
+                                                <div class="stat-number">⭐⭐⭐⭐</div>
+                                                <div class="stat-label">Diseño Industrial</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-box">
+                                                <div class="stat-number">⭐⭐⭐⭐⭐</div>
+                                                <div class="stat-label">Impresión 3D</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-box">
+                                                <div class="stat-number">⭐⭐⭐</div>
+                                                <div class="stat-label">Programación</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-box">
+                                                <div class="stat-number">⭐⭐</div>
+                                                <div class="stat-label">Diseño Gráfico</div>
+                                                <small class="text-muted">(en progreso)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Habilidades Especiales -->
+                        <div class="col-12">
+                            <div class="card ficha-card">
+                                <div class="card-header ficha-header">
+                                    <h4 class="mb-0">HABILIDADES ESPECIALES</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="skill-item">
+                                                <span class="skill-icon">🎯</span>
+                                                <div>
+                                                    <strong>Diseño de Contenedores</strong>
+                                                    <p class="mb-0 small text-muted">Productos modulares y funcionales</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="skill-item">
+                                                <span class="skill-icon">🖨️</span>
+                                                <div>
+                                                    <strong>Modelado 3D</strong>
+                                                    <p class="mb-0 small text-muted">Fusion 360 en aprendizaje muy rápido</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="skill-item">
+                                                <span class="skill-icon">💻</span>
+                                                <div>
+                                                    <strong>Desarrollo Web</strong>
+                                                    <p class="mb-0 small text-muted">HTML, CSS, JavaScript</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="skill-item">
+                                                <span class="skill-icon">📐</span>
+                                                <div>
+                                                    <strong>Lógica de producto</strong>
+                                                    <p class="mb-0 small text-muted">De la idea al producto con sentido y funcional</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-        
-        <!-- Imprenta -->
-        <div class="col-md-6">
-            <div class="bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden h-100 d-flex flex-column">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Imprenta</h2>
-                    <p class="lead">Impresiones de calidad, armado de tacos de notas, flyers, encuadernacion tradicional y más.</p>
+
+        <!-- Inventario / Herramientas -->
+        <div class="container my-5">
+            <div class="card ficha-card">
+                <div class="card-header ficha-header">
+                    <h4 class="mb-0">INVENTARIO DE HERRAMIENTAS</h4>
                 </div>
-                <div class="bg-dark shadow-sm mx-auto mt-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"></div>
+                <div class="card-body">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+                        <div class="col">
+                            <div class="tool-item">
+                                <div class="tool-icon">🔧</div>
+                                <div class="tool-name">Fusion 360</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tool-item">
+                                <div class="tool-icon">📕</div>
+                                <div class="tool-name">Indesign</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tool-item">
+                                <div class="tool-icon">✏️</div>
+                                <div class="tool-name">Illustrator</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tool-item">
+                                <div class="tool-icon">🖱️</div>
+                                <div class="tool-name">Canva</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tool-item">
+                                <div class="tool-icon">🖨️</div>
+                                <div class="tool-name">Impresora 3D y HP InkTank 415</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tool-item">
+                                <div class="tool-icon">💻</div>
+                                <div class="tool-name">Sublime text</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <!-- Mikuby -->
-        <div class="col-md-6">
-            <div class="bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden h-100 d-flex flex-column">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Mikuby</h2>
-                    <p class="lead">Más que una marca, crece contigo.</p>
+
+        <!-- Logros Desbloqueados -->
+        <div class="container my-5">
+            <div class="card ficha-card">
+                <div class="card-header ficha-header">
+                    <h4 class="mb-0">LOGROS DESBLOQUEADOS</h4>
                 </div>
-                <div class="bg-dark shadow-sm mx-auto mt-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"></div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">📬</span>
+                                <div>
+                                    <strong>Proyecto CorreosChile</strong>
+                                    <p class="mb-0 small">Diseño de contenedor modular y dispensador de cartas</p>
+                                    <span class="badge-suspendido btn-falso">Suspendido</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">📚</span>
+                                <div>
+                                    <strong>5 Semestres Completados</strong>
+                                    <p class="mb-0 small">Medio camino hacia la graduación</p>
+                                    <span class="badge-progreso btn-falso">En progreso</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🖨️</span>
+                                <div>
+                                    <strong>Aprendiz de la Impresión 3D</strong>
+                                    <p class="mb-0 small">25+ impresiones exitosas</p>
+                                    <span class="badge-progreso btn-falso">En progreso</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">💻</span>
+                                <div>
+                                    <strong>Primera Página Web</strong>
+                                    <p class="mb-0 small">Mikuby.cl está en línea</p>
+                                    <span class="badge-expansion btn-falso">En expansión</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <!-- Portafolio -->
-        <div class="col-md-6">
-            <div class="text-bg-primary pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden h-100 d-flex flex-column">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Portafolio</h2>
-                    <p class="lead">Mis fracasos, mis aciertos y mis ganas de seguir mejorando.</p>
+
+        <!-- Biografía / Descripción -->
+        <div class="container my-5">
+            <div class="card ficha-card">
+                <div class="card-header ficha-header">
+                    <h4 class="mb-0">Acerca de mí</h4>
                 </div>
-                <div class="bg-body-tertiary shadow-sm mx-auto mt-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"></div>
+                <div class="card-body">
+                    <p class="lead">
+                        Estudiante de 5to semestre de Diseño Integral en la Pontificia Universidad Católica. 
+                        Especializada en diseño industrial, con particular interés en la impresión 3D y 
+                        el diseño digital. Actualmente expandiendo habilidades hacia la programación web.
+                    </p>
+                    <hr>
+                    <p>
+                        <strong>Fortalezas:</strong> Diseño industrial, modelado 3D, prototipado rápido y pensamiento espacial.
+                    </p>
+                    <p>
+                        <strong>Áreas de mejora:</strong> Formulación de proyectos y diseño gráfico 
+                        (actualmente en entrenamiento).
+                    </p>
+                    <p>
+                        <strong>Proyecto destacado (bien logrado):</strong> "De vuelta a Casa": Juego de mesa hecho para adultos mayores que han vivido en situación de calle y buscan reeincorporarse a la sociedad a través del Hogar de Cristo y el Programa Estatal "Vivienda Primero".
+                    </p>
+                    <p class="mb-0">
+                        <strong>Proyecto destacado (conceptual):</strong> Contenedor modular y dispensador de cartas para CorreosChile - Proyecto que demuestra capacidad de diseño funcional y 
+                        pensamiento sistemático.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+
+        <!-- Call to Action -->
+        <div class="container my-5 text-center">
+            <div class="card ficha-card">
+                <div class="card-body p-5">
+                    <h3 class="mb-4">¿Listo para colaborar?</h3>
+                    <p class="lead mb-4">Acepto misiones de diseño, impresión 3D y desarrollo web</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="mailto:fernanda.humeres@uc.cl" class="btn btn-mikuby-primary btn-lg">
+                            Enviar Mensaje
+                        </a>
+                        <a href="portafolio.html" class="btn btn-mikuby-secondary btn-lg">
+                            Ver Portafolio
+                        </a>
+                        <a href="https://wa.me/946880906" class="btn btn-mikuby-secondary btn-lg">
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     <!-- Footer -->
     <footer class="container py-5">
@@ -141,10 +382,9 @@
                     <li><a class="link-secondary text-decoration-none" href="https://github.com/Mikuby11">GitHub</a></li>
                 </ul>
             </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-

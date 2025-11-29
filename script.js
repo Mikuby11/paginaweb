@@ -181,3 +181,72 @@ function crearGrafico() {
 if (document.getElementById('graficoBarras')) {
     crearGrafico();
 }
+//carruseles
+
+const carruseles = [
+                {
+                    id: "carrusel1",
+                    slides: [
+                        { img: "img/1.webp", titulo: "Servicio rápido", texto: "Tus cotizaciones en menos de 24 horas con entregas de hasta 48 horas hábiles" },
+                        { img: "img/2.webp", titulo: "De lunes a sábado", texto: "Respuesta de lunes a sábado con posibilidad de entrega en metros o retiro" },
+                        { img: "img/3.webp", titulo: "Modelado trabajado en Fusión 360", texto: "Ideal para trabajos que requieran precisión y medidas estricas, para sistemas y artefactos." }
+                    ]
+                },
+                {
+                    id: "carrusel2",
+                    slides: [
+                        { img: "img/4.webp", titulo: "Trabajo 1", texto: "Cuchillo como prototipo estético" },
+                        { img: "img/5.webp", titulo: "Trabajo 2", texto: "Monedas tipo tazos para pokemon TCG personalizadas"},
+                        { img: "img/6.webp", titulo: "Trabajo 3", texto: "Contramoldes para pellets de comida de mascotas" },
+                        { img: "img/7.webp", titulo: "Trabajo 4", texto: "Contenedor para acuarelas modular e intercambiable" },
+                        { img: "img/8.webp", titulo: "Trabajo 5", texto: "Contenedor de pellets biofertilizantes ajustable a mangueras de riego" },
+                        { img: "img/9.webp", titulo: "Trabajo 6", texto: "Componentes de espada de Giyuu Tomioka para Cosplay" }
+                    ]
+                }
+            ];
+
+function crearCarrusel(carruselData) {
+    const { id, slides } = carruselData;
+
+    const indicadores = slides.map((_, index) =>
+        `<button type="button" data-bs-target="#${id}" data-bs-slide-to="${index}" 
+         ${index === 0 ? 'class="active" aria-current="true"' : ''} 
+         aria-label="Slide ${index + 1}"></button>`
+    ).join('');
+
+    const items = slides.map((slide, index) =>
+        `<div class="carousel-item ${index === 0 ? 'active' : ''}">
+            <img src="${slide.img}" class="d-block w-50 mx-auto" alt="${slide.titulo}">
+            <div class="carousel-caption w-50 mx-auto">
+                <h5>${slide.titulo}</h5>
+                <p>${slide.texto}</p>
+            </div>
+        </div>`
+    ).join('');
+
+    return `
+        <div id="${id}" class="carousel slide mb-5">
+            <div class="carousel-indicators">
+                ${indicadores}
+            </div>
+            <div class="carousel-inner">
+                ${items}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#${id}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#${id}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    `;
+}
+
+const contenedor = document.querySelector("#contenedor-carruseles");
+if (contenedor && typeof carruseles !== 'undefined') {
+    carruseles.forEach(carrusel => {
+        contenedor.innerHTML += crearCarrusel(carrusel);
+    });
+}

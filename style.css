@@ -93,6 +93,33 @@ body {
     box-shadow: 0 0.125rem 0.25rem rgba(12, 24, 68, 0.15) !important;
 }
 
+.labo-img {
+    background-image: url("img/12.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imp-img {
+    background-image: url("img/14.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mikuby-img {
+    background-image: url("img/16.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.port-img {
+    background-image: url("img/15.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* ========================================
    FOOTER
    ======================================== */
@@ -269,7 +296,7 @@ a {
     background-color: var(--crema) !important;
 }
 /* ========================================
-   TABLA DE HABILIDADES - ESTILO MEJORADO
+   TABLA DE HABILIDADES
    ======================================== */
 .container.habilidades-section {
     background-color: var(--crema);
@@ -329,11 +356,6 @@ a {
     border-right: none !important;
     font-weight: 600;
     font-size: 1.05rem;
-}
-
-.habilidades-section .table tbody tr {
-    transition: all 0.3s ease;
-    background-color: white !important;
 }
 
 .habilidades-section .table tbody tr:hover {
@@ -434,4 +456,107 @@ a {
         font-size: 1.1rem;
         padding: 1.3rem;
     }
+}
+
+/* ========================================
+                    CARRUSEL
+   ======================================== */
+   .carousel-caption {
+                position: static !important;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+/* ========================================
+   CARRUSEL - Textos personalizados
+   ======================================== */
+
+.carousel-caption h5 {
+    color: var(--rojo-intenso) !important;
+    font-weight: 600;
+    font-size: 2rem; /* <-- tamaño del título */
+}
+
+.carousel-caption p {
+    color: var(--rosa-suave) !important;
+    font-size: 1.2rem; /* <-- tamaño del texto */
+}
+
+.carousel-caption {
+    background-color: var(--crema) !important;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Punto activo */
+.carousel-indicators .active {
+    background-color: var(--rojo-intenso) !important; /* Color del punto seleccionado */
+}
+
+/* Puntos inactivos */
+.carousel-indicators [data-bs-target] {
+    background-color: var(--rosa-suave) !important;  /* Color de los puntos normales */
+    opacity: 1; /* Evita que Bootstrap los haga muy claros */
+}
+.card {
+  background-color: var(--crema);
+  border-radius: 8px;
+  border-color: var(--azul-oscuro);
+}
+
+.card-title {
+    color: var(--rojo-intenso);
+    font-size: 2rem;
+} 
+
+.card-text {
+    color: var(--rosa-suave);
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.card img {
+    border-radius: 8px;
+}
+
+
+.fefy-img {
+    background-image: url("img/17.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-falso {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--gris-oscuro);
+    border: 3px solid gray;
+    border-radius: 4px;
+    opacity: 0.6; /* para simular disabled */
+    cursor: default;
+}
+
+.badge-progreso {
+    color: var(--rosa-suave);
+}
+
+.badge-suspendido {
+    color: var(--rojo-intenso);
+}
+
+.badge-expansion {
+    color: var(--azul-oscuro);
+}
+
+.fefy-img {
+    width: 250px;
+    height: 250px;
+    background-image: url('img/fefy.webp'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    border: 4px solid var(--azul-oscuro);
+    margin-bottom: 1rem;
 }
