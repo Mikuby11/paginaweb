@@ -1,17 +1,40 @@
 <!doctype html>
-<html lang="es" data-bs-theme="auto">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Mikuby - Sobre mí" />
-    <title>Mikuby - Sobre mí</title>
     
-    <!-- Bootstrap CSS desde CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="description" content="Sobre mí - Fernanda Humeres (Mikuby). Estudiante de Diseño Integral UC, especializada en diseño industrial e impresión 3D." />
+    <meta name="keywords" content="Fernanda Humeres, Mikuby, diseñadora industrial, estudiante diseño UC, impresión 3D" />
+    <meta name="author" content="Fernanda Humeres - Mikuby" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sobre mí - Fernanda Humeres | Mikuby" />
+    <meta property="og:description" content="Estudiante de Diseño Integral PUC. Especializada en diseño industrial, impresión 3D y desarrollo web." />
+    <meta property="og:type" content="profile" />
+    
+    <title>Sobre mí - Fernanda Humeres | Mikuby</title>
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- CSS Critical -->
+    <style>
+        body { background-color: #FFF5E1; margin: 0; }
+        .navbar { background-color: #0C1844 !important; }
+    </style>
+    
+    <!-- Bootstrap CSS diferido -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
+    
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Iconos SVG -->
+    <!-- SVG Icons -->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"></circle>
@@ -22,22 +45,22 @@
     <!-- Navegación -->
     <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand d-md-none" href="#">
+            <a class="navbar-brand d-md-none" href="index.html" aria-label="Mikuby Home">
                 <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
                 Mikuby
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title">Mikuby</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="index.html" aria-label="Home">
                                 <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
                             </a>
                         </li>
@@ -45,7 +68,6 @@
                         <li class="nav-item"><a class="nav-link" href="laboratorio.html">Laboratorio 3D</a></li>
                         <li class="nav-item"><a class="nav-link" href="imprenta.html">Imprenta</a></li>
                         <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cotizacion.html">Cotizaciones</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
                     </ul>
                 </div>
@@ -71,10 +93,10 @@
                 <div class="col-lg-4">
                     <div class="card ficha-card h-100">
                         <div class="card-header ficha-header">
-                            <h4 class="mb-0">INFO BÁSICA</h4>
+                            <h2 class="mb-0 h4">👤 INFO BÁSICA</h2>
                         </div>
                         <div class="card-body">
-                            <div class="fefy-img mx-auto mb-3"></div>
+                            <div class="fefy-img mx-auto mb-3" role="img" aria-label="Foto de perfil de Fernanda Humeres"></div>
                             
                             <div class="info-item">
                                 <span class="info-label">NOMBRE:</span>
@@ -103,7 +125,7 @@
                             
                             <div class="info-item">
                                 <span class="info-label">ESTADO:</span>
-                                <span class="info-value text-success fw-bold">Disponible</span>
+                                <span class="info-value text-success fw-bold">🟢 Disponible</span>
                             </div>
                         </div>
                     </div>
@@ -117,31 +139,31 @@
                         <div class="col-12">
                             <div class="card ficha-card">
                                 <div class="card-header ficha-header">
-                                    <h4 class="mb-0">ESTADÍSTICAS</h4>
+                                    <h2 class="mb-0 h4">📊 ESTADÍSTICAS</h2>
                                 </div>
                                 <div class="card-body">
                                     <div class="row g-3">
                                         <div class="col-md-3 col-6">
                                             <div class="stat-box">
-                                                <div class="stat-number">⭐⭐⭐⭐</div>
+                                                <div class="stat-number" aria-label="4 de 5 estrellas">⭐⭐⭐⭐</div>
                                                 <div class="stat-label">Diseño Industrial</div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-6">
                                             <div class="stat-box">
-                                                <div class="stat-number">⭐⭐⭐⭐⭐</div>
+                                                <div class="stat-number" aria-label="5 de 5 estrellas">⭐⭐⭐⭐⭐</div>
                                                 <div class="stat-label">Impresión 3D</div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-6">
                                             <div class="stat-box">
-                                                <div class="stat-number">⭐⭐⭐</div>
+                                                <div class="stat-number" aria-label="3 de 5 estrellas">⭐⭐⭐</div>
                                                 <div class="stat-label">Programación</div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-6">
                                             <div class="stat-box">
-                                                <div class="stat-number">⭐⭐</div>
+                                                <div class="stat-number" aria-label="2 de 5 estrellas">⭐⭐</div>
                                                 <div class="stat-label">Diseño Gráfico</div>
                                                 <small class="text-muted">(en progreso)</small>
                                             </div>
@@ -155,13 +177,13 @@
                         <div class="col-12">
                             <div class="card ficha-card">
                                 <div class="card-header ficha-header">
-                                    <h4 class="mb-0">HABILIDADES ESPECIALES</h4>
+                                    <h2 class="mb-0 h4">✨ HABILIDADES ESPECIALES</h2>
                                 </div>
                                 <div class="card-body">
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="skill-item">
-                                                <span class="skill-icon">🎯</span>
+                                                <span class="skill-icon" aria-hidden="true">🎯</span>
                                                 <div>
                                                     <strong>Diseño de Contenedores</strong>
                                                     <p class="mb-0 small text-muted">Productos modulares y funcionales</p>
@@ -170,7 +192,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="skill-item">
-                                                <span class="skill-icon">🖨️</span>
+                                                <span class="skill-icon" aria-hidden="true">🖨️</span>
                                                 <div>
                                                     <strong>Modelado 3D</strong>
                                                     <p class="mb-0 small text-muted">Fusion 360 en aprendizaje muy rápido</p>
@@ -179,7 +201,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="skill-item">
-                                                <span class="skill-icon">💻</span>
+                                                <span class="skill-icon" aria-hidden="true">💻</span>
                                                 <div>
                                                     <strong>Desarrollo Web</strong>
                                                     <p class="mb-0 small text-muted">HTML, CSS, JavaScript</p>
@@ -188,7 +210,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="skill-item">
-                                                <span class="skill-icon">📐</span>
+                                                <span class="skill-icon" aria-hidden="true">📐</span>
                                                 <div>
                                                     <strong>Lógica de producto</strong>
                                                     <p class="mb-0 small text-muted">De la idea al producto con sentido y funcional</p>
@@ -210,43 +232,43 @@
         <div class="container my-5">
             <div class="card ficha-card">
                 <div class="card-header ficha-header">
-                    <h4 class="mb-0">INVENTARIO DE HERRAMIENTAS</h4>
+                    <h2 class="mb-0 h4">🎒 INVENTARIO DE HERRAMIENTAS</h2>
                 </div>
                 <div class="card-body">
                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
                         <div class="col">
                             <div class="tool-item">
-                                <div class="tool-icon">🔧</div>
+                                <div class="tool-icon" aria-hidden="true">🔧</div>
                                 <div class="tool-name">Fusion 360</div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="tool-item">
-                                <div class="tool-icon">📕</div>
+                                <div class="tool-icon" aria-hidden="true">📕</div>
                                 <div class="tool-name">Indesign</div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="tool-item">
-                                <div class="tool-icon">✏️</div>
+                                <div class="tool-icon" aria-hidden="true">✏️</div>
                                 <div class="tool-name">Illustrator</div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="tool-item">
-                                <div class="tool-icon">🖱️</div>
+                                <div class="tool-icon" aria-hidden="true">🖱️</div>
                                 <div class="tool-name">Canva</div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="tool-item">
-                                <div class="tool-icon">🖨️</div>
+                                <div class="tool-icon" aria-hidden="true">🖨️</div>
                                 <div class="tool-name">Impresora 3D y HP InkTank 415</div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="tool-item">
-                                <div class="tool-icon">💻</div>
+                                <div class="tool-icon" aria-hidden="true">💻</div>
                                 <div class="tool-name">Sublime text</div>
                             </div>
                         </div>
@@ -259,13 +281,13 @@
         <div class="container my-5">
             <div class="card ficha-card">
                 <div class="card-header ficha-header">
-                    <h4 class="mb-0">LOGROS DESBLOQUEADOS</h4>
+                    <h2 class="mb-0 h4">🏆 LOGROS DESBLOQUEADOS</h2>
                 </div>
                 <div class="card-body">
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="achievement-item">
-                                <span class="achievement-icon">📬</span>
+                                <span class="achievement-icon" aria-hidden="true">🔬</span>
                                 <div>
                                     <strong>Proyecto CorreosChile</strong>
                                     <p class="mb-0 small">Diseño de contenedor modular y dispensador de cartas</p>
@@ -275,7 +297,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="achievement-item">
-                                <span class="achievement-icon">📚</span>
+                                <span class="achievement-icon" aria-hidden="true">📚</span>
                                 <div>
                                     <strong>5 Semestres Completados</strong>
                                     <p class="mb-0 small">Medio camino hacia la graduación</p>
@@ -285,7 +307,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="achievement-item">
-                                <span class="achievement-icon">🖨️</span>
+                                <span class="achievement-icon" aria-hidden="true">🖨️</span>
                                 <div>
                                     <strong>Aprendiz de la Impresión 3D</strong>
                                     <p class="mb-0 small">25+ impresiones exitosas</p>
@@ -295,7 +317,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="achievement-item">
-                                <span class="achievement-icon">💻</span>
+                                <span class="achievement-icon" aria-hidden="true">💻</span>
                                 <div>
                                     <strong>Primera Página Web</strong>
                                     <p class="mb-0 small">Mikuby.cl está en línea</p>
@@ -312,7 +334,7 @@
         <div class="container my-5">
             <div class="card ficha-card">
                 <div class="card-header ficha-header">
-                    <h4 class="mb-0">Acerca de mí</h4>
+                    <h2 class="mb-0 h4">📖 Acerca de mí</h2>
                 </div>
                 <div class="card-body">
                     <p class="lead">
@@ -343,17 +365,17 @@
         <div class="container my-5 text-center">
             <div class="card ficha-card">
                 <div class="card-body p-5">
-                    <h3 class="mb-4">¿Listo para colaborar?</h3>
+                    <h2 class="mb-4 h3">¿Listo para colaborar?</h2>
                     <p class="lead mb-4">Acepto misiones de diseño, impresión 3D y desarrollo web</p>
                     <div class="d-flex gap-3 justify-content-center flex-wrap">
                         <a href="mailto:fernanda.humeres@uc.cl" class="btn btn-mikuby-primary btn-lg">
-                            Enviar Mensaje
+                            📧 Enviar Mensaje
                         </a>
                         <a href="portafolio.html" class="btn btn-mikuby-secondary btn-lg">
-                            Ver Portafolio
+                            📁 Ver Portafolio
                         </a>
-                        <a href="https://wa.me/946880906" class="btn btn-mikuby-secondary btn-lg">
-                            WhatsApp
+                        <a href="https://wa.me/946880906" class="btn btn-mikuby-secondary btn-lg" target="_blank" rel="noopener">
+                            💬 WhatsApp
                         </a>
                     </div>
                 </div>
@@ -366,25 +388,25 @@
     <footer class="container py-5">
         <div class="row">
             <div class="col-12 col-md">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" viewBox="0 0 24 24" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
                 </svg>
                 <small class="d-block mb-3 text-body-secondary">&copy; 2025 Mikuby</small>
             </div>
             <div class="col-2">
-                <h5>Contacto y Redes</h5>
+                <h3 class="h5">Contacto y Redes</h3>
                 <ul class="list-unstyled text-small">
                     <li><a class="link-secondary text-decoration-none" href="mailto:fernanda.humeres@uc.cl">Correo</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://wa.me/946880906">Whatsapp</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://www.instagram.com/fefy_humeres/">Instagram</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://x.com/FefyHumeres">X</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://github.com/Mikuby11">GitHub</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://wa.me/946880906" target="_blank" rel="noopener">Whatsapp</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://www.instagram.com/fefy_humeres/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://x.com/FefyHumeres" target="_blank" rel="noopener">X</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://github.com/Mikuby11" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>

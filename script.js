@@ -12,7 +12,12 @@ async function datos(raw) {
             portfolio.innerHTML += `
         <div class="col">
             <div class="card shadow-sm h-100">
-                <img src="${trabajo.imagen}" class="card-img-top" alt="${trabajo.titulo}">
+                <img src="${trabajo.imagen}" 
+                     class="card-img-top" 
+                     alt="${trabajo.titulo}"
+                     loading="lazy"
+                     width="400"
+                     height="250">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${trabajo.titulo}</h5>
                     <p class="card-text text-muted">${trabajo.descripcion}</p>
@@ -57,7 +62,7 @@ if (donde) {
         donde.innerHTML += `<tr>
                             <td class="fw-bold">${h.programa}</td>
                             <td>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 8"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 8" role="img" aria-label="${h.programa}: ${h.valor}% de dominio"> 
                                     <rect width="${h.valor}" height="8" rx="4"/>
                                 </svg>
                             </td>
@@ -179,31 +184,36 @@ function crearGrafico() {
 
 // Inicializar el gráfico cuando la página cargue
 if (document.getElementById('graficoBarras')) {
-    crearGrafico();
+    // Esperar a que Chart.js esté disponible
+    if (typeof Chart !== 'undefined') {
+        crearGrafico();
+    } else {
+        window.addEventListener('load', crearGrafico);
+    }
 }
-//carruseles
 
+// ========================================
+// CARRUSELES
+// ========================================
+
+// Datos de carruseles para laboratorio.html
 const carruseles = [
-                {
-                    id: "carrusel1",
-                    slides: [
-                        { img: "img/1.webp", titulo: "Servicio rápido", texto: "Tus cotizaciones en menos de 24 horas con entregas de hasta 48 horas hábiles" },
-                        { img: "img/2.webp", titulo: "De lunes a sábado", texto: "Respuesta de lunes a sábado con posibilidad de entrega en metros o retiro" },
-                        { img: "img/3.webp", titulo: "Modelado trabajado en Fusión 360", texto: "Ideal para trabajos que requieran precisión y medidas estricas, para sistemas y artefactos." }
-                    ]
-                },
-                {
-                    id: "carrusel2",
-                    slides: [
-                        { img: "img/4.webp", titulo: "Trabajo 1", texto: "Cuchillo como prototipo estético" },
-                        { img: "img/5.webp", titulo: "Trabajo 2", texto: "Monedas tipo tazos para pokemon TCG personalizadas"},
-                        { img: "img/6.webp", titulo: "Trabajo 3", texto: "Contramoldes para pellets de comida de mascotas" },
-                        { img: "img/7.webp", titulo: "Trabajo 4", texto: "Contenedor para acuarelas modular e intercambiable" },
-                        { img: "img/8.webp", titulo: "Trabajo 5", texto: "Contenedor de pellets biofertilizantes ajustable a mangueras de riego" },
-                        { img: "img/9.webp", titulo: "Trabajo 6", texto: "Componentes de espada de Giyuu Tomioka para Cosplay" }
-                    ]
-                }
-            ];
+    {
+        id: "carrusel1",
+        slides: [
+            { img: "img/1.webp", titulo: "Proyecto 1", texto: "Descripción del primer proyecto." },
+            { img: "img/2.webp", titulo: "Proyecto 2", texto: "Descripción del segundo proyecto." },
+            { img: "img/3.webp", titulo: "Proyecto 3", texto: "Descripción del tercer proyecto." }
+        ]
+    },
+    {
+        id: "carrusel2",
+        slides: [
+            { img: "img/4.webp", titulo: "Proyecto 4", texto: "Este es otro carrusel de ejemplo." },
+            { img: "img/5.webp", titulo: "Proyecto 5", texto: "Puedes agregar cuantos carruseles quieras." }
+        ]
+    }
+];
 
 function crearCarrusel(carruselData) {
     const { id, slides } = carruselData;
@@ -216,10 +226,15 @@ function crearCarrusel(carruselData) {
 
     const items = slides.map((slide, index) =>
         `<div class="carousel-item ${index === 0 ? 'active' : ''}">
-            <img src="${slide.img}" class="d-block w-50 mx-auto" alt="${slide.titulo}">
+            <img src="${slide.img}" 
+                 class="d-block w-50 mx-auto" 
+                 alt="${slide.titulo}"
+                 loading="lazy"
+                 width="600"
+                 height="400">
             <div class="carousel-caption w-50 mx-auto">
-                <h5>${slide.titulo}</h5>
-                <p>${slide.texto}</p>
+                <h5 class="fs-6 fs-md-5">${slide.titulo}</h5>
+                <p class="small">${slide.texto}</p>
             </div>
         </div>`
     ).join('');

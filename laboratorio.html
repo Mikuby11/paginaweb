@@ -1,50 +1,61 @@
 <!doctype html>
-<html lang="es" data-bs-theme="auto">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Mikuby - Sitio en construcción" />
-    <title>Mikuby - En construcción</title>
     
-    <!-- Bootstrap CSS desde CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="description" content="Laboratorio 3D Mikuby - Modelado e impresión 3D con filamentos PLA, PET-G y ABS. Servicio profesional en Santiago, Chile." />
+    <meta name="keywords" content="impresión 3D, modelado 3D, Creality, filamentos PLA, servicio impresión 3D Santiago" />
+    <meta name="author" content="Fernanda Humeres - Mikuby" />
+    <meta name="robots" content="index, follow" />
+    
+    <title>Laboratorio 3D - Mikuby | Modelado e Impresión 3D</title>
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- CSS Critical -->
+    <style>
+        body { background-color: #FFF5E1; margin: 0; }
+        .navbar { background-color: #0C1844 !important; }
+    </style>
+    
+    <!-- Bootstrap CSS diferido -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
+    
     <link href="style.css" rel="stylesheet">
-
 </head>
 <body>
-    <!-- Iconos SVG -->
+    <!-- SVG Icons -->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"></circle>
             <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
-        </symbol>
-        <symbol id="cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-        </symbol>
-        <symbol id="chevron-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
         </symbol>
     </svg>
 
     <!-- Navegación -->
     <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand d-md-none" href="#">
+            <a class="navbar-brand d-md-none" href="index.html" aria-label="Mikuby Home">
                 <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
                 Mikuby
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title">Mikuby</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="index.html" aria-label="Home">
                                 <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
                             </a>
                         </li>
@@ -64,94 +75,112 @@
         <div class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
             <div class="col-md-6 p-lg-5 mx-auto my-5">
                 <h1 class="display-3 fw-bold">Laboratorio 3D MKB</h1>
-                <div class="d-flex gap-3 justify-content-center lead fw-normal"></div>
+                <h2 class="visually-hidden">Servicios de modelado e impresión 3D profesional</h2>
             </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+            <div class="product-device shadow-sm d-none d-md-block" aria-hidden="true"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block" aria-hidden="true"></div>
         </div>
 
-<!-- carrusel -->
-<div id="contenedor-carruseles" class="container">
-                <!-- Los carruseles se cargan dinámicamente -->
-            </div>
-
-<!-- cards containers info -->
-            <div class="container my-5">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="img/11.webp">
-                <div class="card-body">
-                    <h5 class="card-title">Filamentos</h5>
-                    <p class="card-text">Ocupamos PLA, PLA+, PLA Matte, PET-G, PET y ABS.</p>
-                    <p class="card-text">Ocupamos Marcas de confianza como Creality, Elegoo y Esun.</p>
-                    <p class="card-text">La variedad de colores es de Azul, Blanco, Verde manzana, Negro y Gris. Aún asi por un costo adicional se puede conseguir el color de su preferencia.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="img/12.webp">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Impresoras 3D</h5>
-                    <p class="card-text">Trabajamos con Impresoras de la marca Creality, con una cama de 22x22 cm, garantizando un acabado prolijo y en poco tiempo.</p>
-                </div>
-            </div>
+        <!-- Carrusel -->
+        <div id="contenedor-carruseles" class="container">
+            <!-- Los carruseles se cargan dinámicamente -->
         </div>
 
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="img/13.webp">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Cotizaciones</h5>
-                    <p class="card-text">Las cotizaciones pueden demorar hasta 24 hr, para ello se debe contactar al correo o al numero telefonico con su archivo .STL, para generar la cotizacion, todo trabajo entregado para cotizar es tratado con la privacidad debida.</p>
+        <!-- Cards containers info -->
+        <div class="container my-5">
+            <h2 class="visually-hidden">Información sobre nuestros servicios</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/11.webp" 
+                             alt="Filamentos para impresión 3D" 
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Filamentos</h3>
+                            <p class="card-text">Ocupamos PLA, PLA+, PLA Matte, PET-G, PET y ABS.</p>
+                            <p class="card-text">Ocupamos Marcas de confianza como Creality, Elegoo y Esun.</p>
+                            <p class="card-text">La variedad de colores es de Azul, Blanco, Verde manzana, Negro y Gris. Aún así por un costo adicional se puede conseguir el color de su preferencia.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/12.webp" 
+                             alt="Impresoras 3D Creality" 
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title text-center h5">Impresoras 3D</h3>
+                            <p class="card-text">Trabajamos con Impresoras de la marca Creality, con una cama de 22x22 cm, garantizando un acabado prolijo y en poco tiempo.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="img/10.webp">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Entregas</h5>
-                    <p class="card-text">Las entregas pueden ser retiro en el domicilio de la tienda o en algun punto acordado:</p>
-                    <p class="card-text">Metros línea 1 y 3.</p>
-                    <p class="card-text">Facultad de Arquitectura y Diseño de la Pontificia Universidad Católica.</p>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/13.webp" 
+                             alt="Proceso de cotización" 
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title text-center h5">Cotizaciones</h3>
+                            <p class="card-text">Las cotizaciones pueden demorar hasta 24 hr, para ello se debe contactar al correo o al numero telefónico con su archivo .STL, para generar la cotización, todo trabajo entregado para cotizar es tratado con la privacidad debida.</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/10.webp" 
+                             alt="Puntos de entrega" 
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title text-center h5">Entregas</h3>
+                            <p class="card-text">Las entregas pueden ser retiro en el domicilio de la tienda o en algún punto acordado:</p>
+                            <p class="card-text">Metros línea 1 y 3.</p>
+                            <p class="card-text">Facultad de Arquitectura y Diseño de la Pontificia Universidad Católica.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-        </main>
+    </main>
 
     <!-- Footer -->
     <footer class="container py-5">
         <div class="row">
             <div class="col-12 col-md">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" viewBox="0 0 24 24" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
                 </svg>
                 <small class="d-block mb-3 text-body-secondary">&copy; 2025 Mikuby</small>
             </div>
             <div class="col-2">
-                <h5>Contacto y Redes</h5>
+                <h3 class="h5">Contacto y Redes</h3>
                 <ul class="list-unstyled text-small">
                     <li><a class="link-secondary text-decoration-none" href="mailto:fernanda.humeres@uc.cl">Correo</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://wa.me/946880906">Whatsapp</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://www.instagram.com/fefy_humeres/">Instagram</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://x.com/FefyHumeres">X</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="https://github.com/Mikuby11">GitHub</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://wa.me/946880906" target="_blank" rel="noopener">Whatsapp</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://www.instagram.com/fefy_humeres/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://x.com/FefyHumeres" target="_blank" rel="noopener">X</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://github.com/Mikuby11" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
-
 </html>
-
